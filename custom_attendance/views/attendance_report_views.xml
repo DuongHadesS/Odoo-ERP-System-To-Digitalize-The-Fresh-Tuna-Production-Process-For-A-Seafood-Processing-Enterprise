@@ -1,0 +1,49 @@
+<odoo>
+    <!-- Action -->
+    <record id="action_attendance_report" model="ir.actions.act_window">
+        <field name="name">Báo cáo chấm công</field>
+        <field name="res_model">attendance.report</field>
+        <field name="view_mode">pivot,graph,list</field>
+    </record>
+
+    
+
+    <!-- Pivot View -->
+    <record id="view_attendance_report_pivot" model="ir.ui.view">
+        <field name="name">attendance.report.pivot</field>
+        <field name="model">attendance.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Báo cáo chấm công">
+                <field name="employee_id" type="row"/>
+                <field name="date" type="col"/>
+                <field name="worked_hours" type="measure"/>
+                <field name="planned_hours" type="measure"/>
+                <field name="difference" type="measure"/>
+                <field name="balance" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- list view -->
+    <record id="view_attendance_report_list" model="ir.ui.view">
+        <field name="name">attendance.report.list</field>
+        <field name="model">attendance.report</field>
+        <field name="arch" type="xml">
+            <list string="Báo cáo chấm công" create="false" edit="false">
+                <field name="employee_id"/>
+                <field name="date"/>
+                <field name="worked_hours"/>
+                <field name="planned_hours"/>
+                <field name="difference"/>
+                <field name="balance"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_attendance_report"
+              name="Báo cáo chấm công"
+              parent="menu_custom_attendance_root"
+              action="action_attendance_report"
+              sequence="20"/>
+</odoo>
