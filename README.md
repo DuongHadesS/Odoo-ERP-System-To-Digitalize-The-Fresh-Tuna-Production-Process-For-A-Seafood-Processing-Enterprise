@@ -1,6 +1,5 @@
-Research and application of the Odoo ERP system to digitalize the fresh tuna production process for a seafood processing enterprise.
-(Simulated based on Ba Hai Joint Stock Company).
-
+# 🐟 MANAGEMENT INFORMATION SYSTEMS PROJECT
+**RESEARCH AND APPLICATION OF THE ODOO ERP SYSTEM TO DIGITALIZE THE FRESH TUNA PRODUCTION PROCESS FOR A SEAFOOD PROCESSING ENTERPRISE (SIMULATED BASED ON BA HAI JOINT STOCK COMPANY).**
 ---
 
 ## 📖 Project Overview
